@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: 0 auto;
+  list-style: none;
+  box-sizing: content-box;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.headerBox {
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}

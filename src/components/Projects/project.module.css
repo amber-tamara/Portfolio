@@ -1,0 +1,40 @@
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #f9f9f9;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #fff;
+  color: #444;
+  grid-gap: 1em;
+  /* grid-auto-rows: 100px; */
+  grid-auto-rows: minmax(350px, auto);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: var(--light);
+  padding: 20px;
+}
+
+.box {
+  background: var(--primary);
+  color: var(--dark);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+}
+
+.info {
+  color: #989898;
+  text-align: center;
+}
+
+.title {
+  color: var(--dark);
+  align-content: center;
+}
+
+/* rgba(255,255,255,0) */

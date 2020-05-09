@@ -3,6 +3,7 @@
   --dark: #333;
   --light: #f9f9f9;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --green: #75b42c;
 }
 
 .wrapper {
@@ -12,12 +13,11 @@
   color: #444;
   grid-gap: 1em;
   /* grid-auto-rows: 100px; */
-  grid-auto-rows: minmax(350px, auto);
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10px, 200px));
   background-color: var(--light);
-  padding: 20px;
+  padding: 30px;
 }
 
 .box {
@@ -36,5 +36,3 @@
   color: var(--dark);
   align-content: center;
 }
-
-/* rgba(255,255,255,0) */

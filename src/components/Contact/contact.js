@@ -1,19 +1,41 @@
 import React from "react"
+import contact from "./contact.module.css"
 
 const Contact = () => {
   return (
-    <div>
-      <form
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input name="name" placeholder="Your Name" type="text" />
-        <input name="email" placeholder="name@name.com" type="email" />
-        <textarea name="message" />
-        <button>Send</button>
-      </form>
+    <div className={contact.body}>
+      <div className={contact.container}>
+        <h2 className={contact.title}>Contact me</h2>
+        <div className={contact.wrapper}>
+          <ul className={contact.details}>
+            <li>0777111556</li>
+            <li>ambee@gmail.com</li>
+          </ul>
+          <form
+            className={contact.contact}
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <p>
+              <label>Name</label>
+              <input name="name" placeholder="Your Full Name" type="text" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input name="email" placeholder="Email address" type="email" />
+            </p>
+            <p className={contact.full}>
+              <label>Message</label>
+              <textarea name="message" placeholder="Message" rows="5" />
+            </p>
+            <p className={contact.full}>
+              <button>Send</button>
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }

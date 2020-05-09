@@ -6,7 +6,7 @@ const Projects = () => {
     <div className={cont.container}>
       <div className={cont.wrapper}>
         <div className={cont.box}>
-          <img src={require("./cozycastle.png")}></img>
+          <img className={cont.img} src={require("./cozycastle.png")}></img>
           <span className={cont.title}>Comfy House: Buy furniture</span>
           <p className={cont.info}>
             A vanilla Javascript based project which allows you to pick

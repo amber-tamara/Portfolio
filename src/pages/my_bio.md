@@ -1,5 +1,5 @@
 ---
-title: "About me.."
+title: "A LITTLE BIT ABOUT ME"
 date: "2017-08-10"
 ---
 

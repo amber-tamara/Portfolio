@@ -1,0 +1,24 @@
+.aboutMe {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.imgCropper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.img {
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paragraph {
+  text-align: center;
+  flex: 1;
+}

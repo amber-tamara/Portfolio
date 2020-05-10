@@ -19,15 +19,15 @@ const Contact = () => {
             data-netlify-honeypot="bot-field"
           >
             <p>
-              <label>Name</label>
+              <label>FULL NAME*</label>
               <input name="name" placeholder="Your Full Name" type="text" />
             </p>
             <p>
-              <label>Email Address</label>
+              <label>EMAIL ADRESS*</label>
               <input name="email" placeholder="Email address" type="email" />
             </p>
             <p className={contact.full}>
-              <label>Message</label>
+              <label>MESSAGE*</label>
               <textarea name="message" placeholder="Message" rows="5" />
             </p>
             <p className={contact.full}>

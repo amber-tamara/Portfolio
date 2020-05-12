@@ -14,20 +14,21 @@ const About = () => {
               title
               date(formatString: "DD MMMM, YYYY")
             }
-            excerpt
+            excerpt(pruneLength: 1000)
           }
         }
       }
     }
   `)
   return (
-    <div className={Style.aboutMe}>
+    <div id="about" className={Style.aboutMe}>
       <h4>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h4>
       <div className={Style.imgCropper}>
         <img className={Style.img} src={require("../../images/me.jpeg")}></img>
       </div>
-      <p>{data.allMarkdownRemark.edges[0].node.excerpt}</p>
-      <div className={Style.paragraph}></div>
+      <div className={Style.paragraph}>
+        <p>{data.allMarkdownRemark.edges[0].node.excerpt}</p>
+      </div>
     </div>
   )
 }

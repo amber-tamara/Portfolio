@@ -24,13 +24,21 @@ const Header = () => {
         fluid={data.headerImage.childImageSharp.fluid}
       >
         <ul className="nav-box">
-          <li>ABOUT</li>
-          <li>PORTFOLIO</li>
-          <li>CONTACT</li>
+          <li>
+            <Link to="#about">ABOUT</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="#projects">PORTFOLIO</Link>
+          </li>
+          <li>
+            <Link to="#contact">CONTACT</Link>
+          </li>
         </ul>
         <div className="overlay">
           <div className="content-box">
             <h1 className="title">HI, I'M AMBER</h1>
+            <p className="sub-title">Web Developer</p>
           </div>
         </div>
       </BackgroundImage>

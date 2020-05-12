@@ -8,6 +8,7 @@
 }
 
 .nav-box {
+  padding: 10px;
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -16,9 +17,15 @@
 }
 
 .nav-box li {
-  margin-right: 5px;
+  margin-right: 1em;
   margin-bottom: 0;
   z-index: 10;
+  cursor: pointer;
+}
+
+.nav-box li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .overlay {
@@ -34,11 +41,17 @@
 .content-box {
   max-width: 750px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .title {
   margin: 0;
+  text-align: center;
+}
+
+.sub-title {
+  text-align: center;
+  margin-top: 1em;
 }

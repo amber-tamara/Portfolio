@@ -20,7 +20,8 @@ const Resume = () => {
       className="parallax"
       fluid={data.resumeImage.childImageSharp.fluid}
     >
-      <h1>checkout</h1>
+      <div className="overlay"></div>
+      <h1 className="title">CHECK OUT MY RESUME!</h1>
     </BackgroundImage>
   )
 }

@@ -35,9 +35,9 @@ const Header = () => {
             <Link to="#contact">CONTACT</Link>
           </li>
         </ul>
-        <div className="overlay">
+        <div className="main-overlay">
           <div className="content-box">
-            <h1 className="title">HI, I'M AMBER</h1>
+            <h1 className="main-title">HI, I'M AMBER</h1>
             <p className="sub-title">Web Developer</p>
           </div>
         </div>

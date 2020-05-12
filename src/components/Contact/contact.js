@@ -9,13 +9,8 @@ const Contact = () => {
         <li>0777111556</li>
         <li>ambee@gmail.com</li>
       </ul>
-      <form
-        className={contact.contact}
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
+      <form name="landing-form" method="post" netlify>
+        <label for="name">Name:</label>
         <input name="name" placeholder="Your Full Name" type="text" />
         <input name="email" placeholder="Email address" type="email" />
         <textarea name="message" placeholder="Message" rows="5" />

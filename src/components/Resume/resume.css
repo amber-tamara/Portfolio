@@ -4,7 +4,7 @@
 }
 
 .title {
-  padding: 90px;
+  padding: 50px;
   color: white;
   position: relative;
   z-index: 10;
@@ -17,4 +17,30 @@
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.button {
+  background: none;
+  display: inline-block;
+  z-index: 10;
+  padding: 10px 20px;
+  color: #ddd;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  margin: 20px;
+  backface-visibility: hidden;
+}
+
+.button:hover {
+  transform: scaleX(1.2);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper-button {
+  display: flex;
+  justify-content: center;
 }

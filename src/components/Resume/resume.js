@@ -22,6 +22,15 @@ const Resume = () => {
     >
       <div className="overlay"></div>
       <h1 className="title">CHECK OUT MY RESUME!</h1>
+      <div className="wrapper-button">
+        <a
+          className="button"
+          href="mailto:ambertjansen@gmail.com"
+          target="_blank"
+        >
+          click
+        </a>
+      </div>
     </BackgroundImage>
   )
 }

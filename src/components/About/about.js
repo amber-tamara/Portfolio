@@ -29,6 +29,10 @@ const About = () => {
       <div className={Style.paragraph}>
         <p>{data.allMarkdownRemark.edges[0].node.excerpt}</p>
       </div>
+      <div className={Style.TLDR}>
+        TL;DR? SELF PROCLAMATIONS
+        <img className={Style.img} src={require("./dance.svg")}></img>
+      </div>
     </div>
   )
 }

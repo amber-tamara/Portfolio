@@ -15,18 +15,24 @@
 
 // const Image = () => {
 //   const data = useStaticQuery(graphql`
-//     query {
-//       placeholderImage: file(relativePath: { eq: "images/landscape.jpg" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 300) {
-//             ...GatsbyImageSharpFluid
+//     query AssetsPhotos {
+//       images: allFile(
+//         filter: {
+//           extension: { regex: "/(jpg)|(jpeg)|(png)|(svg)/" }
+//           relativeDirectory: { eq: "images" }
+//         }
+//       ) {
+//         edges {
+//           node {
+//             id
+//             name
 //           }
 //         }
 //       }
 //     }
 //   `)
 
-//   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+//   return <Img fluid={data.images.edges.node.id} />
 // }
 
 // export default Image

@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 
-.img {
+.picture {
   margin: 0 auto;
   height: 100%;
   object-fit: cover;
@@ -32,4 +32,14 @@
   height: 200px;
   width: 70%;
   max-width: 650px;
+}
+
+.boxSvg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.svg {
+  height: 70px;
+  margin-top: 20px;
 }

@@ -1,6 +1,9 @@
 import React from "react"
 import Style from "./about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
+import IconOne from "../../assets/keyboard.svg"
+import IconTwo from "../../assets/ui.svg"
+import IconThree from "../../assets/dancer.svg"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -24,14 +27,21 @@ const About = () => {
     <div id="about" className={Style.aboutMe}>
       <h4>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h4>
       <div className={Style.imgCropper}>
-        <img className={Style.img} src={require("../../images/me.jpeg")}></img>
+        <img
+          className={Style.picture}
+          src={require("../../images/me.jpeg")}
+        ></img>
       </div>
       <div className={Style.paragraph}>
         <p>{data.allMarkdownRemark.edges[0].node.excerpt}</p>
       </div>
       <div className={Style.TLDR}>
         TL;DR? SELF PROCLAMATIONS
-        <img className={Style.img} src={require("./dance.svg")}></img>
+        <div className={Style.boxSvg}>
+          <IconOne className={Style.svg} />
+          <IconTwo className={Style.svg} />
+          <IconThree className={Style.svg} />
+        </div>
       </div>
     </div>
   )

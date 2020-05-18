@@ -1,5 +1,5 @@
 import React from "react"
-import "./resume.css"
+import resume from "./resume.module.css"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -17,19 +17,21 @@ const Resume = () => {
   `)
   return (
     <BackgroundImage
-      className="parallax"
+      className={resume.parallax}
       fluid={data.resumeImage.childImageSharp.fluid}
     >
-      <div className="overlay"></div>
-      <h1 className="title">CHECK OUT MY RESUME!</h1>
-      <div className="wrapper-button">
-        <a
-          className="button"
-          href="mailto:ambertjansen@gmail.com"
-          target="_blank"
-        >
-          click
-        </a>
+      <div className={resume.overlay}></div>
+      <div className={resume.container}>
+        <h1 className={resume.title}>CHECK OUT MY RESUME!</h1>
+        <div className={resume.wrapperButton}>
+          <a
+            className={resume.button}
+            href="mailto:ambertjansen@gmail.com"
+            target="_blank"
+          >
+            GRAB A COPY
+          </a>
+        </div>
       </div>
     </BackgroundImage>
   )

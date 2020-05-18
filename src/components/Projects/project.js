@@ -1,20 +1,21 @@
 import React from "react"
-import "./project.css"
+import projects from "./project.module.css"
 
 const Projects = () => {
   return (
     <div>
       {" "}
-      <h1>WHAT I'VE DONE</h1>
-      <div className="container">
-        <div className="box">
-          <img className="img" src={require("./cozycastle.png")}></img>
+      <h1 className={projects.header}>WHAT I'VE DONE</h1>
+      <p className={projects.more}>(more coming soon)</p>
+      <div className={projects.container}>
+        <div className={projects.box}>
+          <img className={projects.img} src={require("./cozycastle.png")}></img>
         </div>
-        <div className="box">
-          <img className="img" src={require("./brain.png")}></img>
+        <div className={projects.box}>
+          <img className={projects.img} src={require("./brain.png")}></img>
         </div>
-        <div className="box">
-          <img className="img" src={require("./weather.png")}></img>
+        <div className={projects.box}>
+          <img className={projects.img} src={require("./weather.png")}></img>
         </div>
       </div>
     </div>

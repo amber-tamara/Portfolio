@@ -25,7 +25,7 @@ const About = () => {
   `)
   return (
     <div id="about" className={Style.aboutMe}>
-      <h4>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h4>
+      <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h3>
       <div className={Style.imgCropper}>
         <img
           className={Style.picture}

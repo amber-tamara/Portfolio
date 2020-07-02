@@ -13,7 +13,13 @@ const Contact = () => {
         to shoot me an email!
       </p>{" "}
       <div className={contact.formBox}>
-        <form className={contact.form}>
+        <form
+          className={contact.form}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
           <div className={contact.box1}>
             <h2>Contact Form</h2>
             <label>Name*</label>
@@ -41,6 +47,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
+          <button className={contact.buttonn}>Send</button>
         </form>
         <div className={contact.detailsBox}>
           <ul className={contact.details}>

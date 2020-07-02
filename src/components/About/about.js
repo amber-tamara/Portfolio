@@ -1,5 +1,5 @@
 import React from "react"
-import Style from "./about.module.css"
+import about from "./about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 import IconOne from "../../assets/keyboard.svg"
 import IconTwo from "../../assets/ui.svg"
@@ -24,23 +24,25 @@ const About = () => {
     }
   `)
   return (
-    <div id="about" className={Style.aboutMe}>
+    <div id="about" className={about.aboutMe}>
       <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h3>
-      <div className={Style.imgCropper}>
+      <div className={about.imgCropper}>
         <img
-          className={Style.picture}
+          className={about.picture}
           src={require("../../images/me.jpeg")}
         ></img>
       </div>
-      <div className={Style.paragraph}>
-        <p>{data.allMarkdownRemark.edges[0].node.excerpt}</p>
+      <div className={about.paragraph}>
+        <p className={about.text}>
+          {data.allMarkdownRemark.edges[0].node.excerpt}
+        </p>
       </div>
-      <div className={Style.TLDR}>
+      <div className={about.TLDR}>
         TL;DR? SELF PROCLAMATIONS
-        <div className={Style.boxSvg}>
-          <IconOne className={Style.svg} />
-          <IconTwo className={Style.svg} />
-          <IconThree className={Style.svg} />
+        <div className={about.boxSvg}>
+          <IconOne className={about.svg} />
+          <IconTwo className={about.svg} />
+          <IconThree className={about.svg} />
         </div>
       </div>
     </div>

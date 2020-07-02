@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import "../Header/background-image.css"
+import header from "../Header/header.module.css"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -20,10 +20,10 @@ const Header = () => {
   return (
     <header>
       <BackgroundImage
-        className="masthead"
+        className={header.masthead}
         fluid={data.headerImage.childImageSharp.fluid}
       >
-        <ul className="nav-box">
+        <ul className={header.navBox}>
           <li>
             <Link to="#about">ABOUT</Link>
           </li>
@@ -35,10 +35,10 @@ const Header = () => {
             <Link to="#contact">CONTACT</Link>
           </li>
         </ul>
-        <div className="main-overlay">
-          <div className="content-box">
-            <h1 className="main-title">HI, I'M AMBER</h1>
-            <p className="sub-title">Web Developer</p>
+        <div className={header.mainOverlay}>
+          <div className={header.contentBox}>
+            <h1 className={header.mainTitle}>HI, I'M AMBER</h1>
+            <p className={header.subTitle}>Web Developer</p>
           </div>
         </div>
       </BackgroundImage>

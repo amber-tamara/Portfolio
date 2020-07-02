@@ -3,6 +3,7 @@
   max-width: 650px;
   text-align: center;
   margin-bottom: 100px;
+  background-color: #ffffff;
 }
 
 .imgCropper {
@@ -21,8 +22,9 @@
 
 .paragraph {
   text-align: center;
-  flex: 1;
+  margin: 0 auto;
   margin-top: 1em;
+  max-width: 400px;
 }
 .TLDR {
   background: #f0f0f0;
@@ -30,7 +32,6 @@
   text-align: center;
   margin: 20px auto;
   padding: 20px;
-  height: 200px;
   width: 70%;
   max-width: 650px;
 }
@@ -38,6 +39,8 @@
 .boxSvg {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .svg {

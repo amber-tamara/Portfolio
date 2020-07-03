@@ -13,7 +13,7 @@ const Contact = () => {
         to shoot me an email!
       </p>{" "}
       <div className={contact.formBox}>
-        <form method="POST" data-netlify="true">
+        <form method="POST" data-netlify="true" name="contact">
           <div className={contact.box1}>
             <h2>Contact Form</h2>
             <label>Name*</label>

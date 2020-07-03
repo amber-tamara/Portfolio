@@ -21,19 +21,16 @@ const Contact = () => {
               className={contact.input}
               type="text"
               name="firstname"
-              type="hidden"
-              name="bot-field"
+              // type="hidden"
+              // value="contact"
             ></input>
           </div>
           <div className={contact.box1}>
             <label>Email*</label>
             <input
               className={contact.input}
-              type="email"
               name="firstname"
-              type="hidden"
-              name="form-name"
-              value="contact"
+              name="bot-field"
             ></input>
           </div>
           <div className={contact.box1}>

@@ -1,16 +1,62 @@
+.background {
+  background: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(270deg, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  -o-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite; */
+}
+
+.background::after {
+  content: "";
+  opacity: .7;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .wrapper {
-  background-color: #f0f0f0;
   line-height: 1.6;
   padding-top: 50px;
   padding-bottom: 70px;
 }
+/* 
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+} */
 
 .paragraph {
   text-align: center;
+  color: #dcdbdf
 }
 
 .title {
-  color: black;
+  color: #dcdbdf;
   text-align: center;
 }
 
@@ -63,10 +109,9 @@
 .formBox {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 40px;
+  justify-content: center;
+ padding: 40px 40px 0 40px;
+ color: #dcdbdf;
 }
 
 .details {
@@ -78,17 +123,41 @@
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 630px) {
   .detailsBox {
     margin-left: 100px;
   }
-  .formBox {
-    padding-left: 120px;
-  }
 }
 
-.buttonn {
-  width: 200px;
-  height: 30px;
-  background-color: red;
+.btn {
+  border: 0;
+  outline: 0;
+  display: block;
+  font-family: "Space Mono",monospace;
+  color: #dcdbdf;
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  transition: all .5s ease-in-out;
+  font-size: 0.9rem;
+  outline: 1px solid #5e70c2;
+  transition: 1s;
+  width: 100%;
+}
+
+.btnPrimary {
+  background: #5e70c2;
+  color: #fff;
+}
+
+.recaptcha {
+  margin-bottom: 21px;
+}
+
+.btnPrimary:hover {
+  color: black;
+  background-color: white;
+  outline: 1px solid #5e70c2;
+  transition: 1s;
 }

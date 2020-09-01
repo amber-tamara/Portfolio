@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+.search {
+  height: 60px;
+}
+
 .navBox {
   padding: 10px;
   display: flex;

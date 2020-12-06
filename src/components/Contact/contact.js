@@ -124,7 +124,7 @@ const Contact = () => {
             </div>
             <div className={contact.recaptcha}>
               <Recaptcha
-                sitekey="6LfwH8QZAAAAAEj31JDBgqFid21Os2CktNbLt2em"
+                sitekey="6Lei-voZAAAAAIa0ogVD2M2RFtu8abefKWClDZMh"
                 render="explicit"
                 onloadCallback={recaptchaLoaded}
                 verifyCallback={verifyCallback}

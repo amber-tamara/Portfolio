@@ -6,21 +6,11 @@ import contact from "./contact.module.css"
 import Recaptcha from "react-recaptcha";
 
 const Contact = () => {
-  const [click, setClick] = useState(false)
-  const [toggle, setToggle] = useState(false)
+  const [click, setClick] = useState(false);
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,
   })
-
-  function handleSubcribe() {
-    if (click === true) {
-      console.log("you have done it!")
-    }
-    else {
-      console.log("please baby")
-    }
-  }
 
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
@@ -31,6 +21,27 @@ const Contact = () => {
       form.reset()
     }
   }
+
+  const clickHandler = function (e) {
+    handleSubcribe()
+  };
+
+  function verifyCallback(response) {
+    if (response) {
+      setClick(true)
+      console.log(click)
+    }
+  }
+
+  function handleSubcribe() {
+    if (click === true) {
+      console.log("you have done it!")
+    }
+    else {
+      console.log("please baby")
+    }
+  }
+
   const handleOnSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -41,10 +52,22 @@ const Contact = () => {
       data: new FormData(form),
     })
       .then(r => {
-        handleServerResponse(true, "Thanks!", form)
+        if (click === true) {
+          handleServerResponse(true, "Thanks!", form)
+          setClick(false)
+          console.log("yay")
+        }
+      })
+      .then(r => {
+        if (click === false) {
+          handleServerResponse(false, "No", form)
+        }
       })
       .catch(r => {
-        handleServerResponse(false, r.response.data.error, form)
+        if (click === false) {
+          handleServerResponse(false, "Please click reCaptcha", form)
+          console.log(r)
+        }
       })
   }
 
@@ -53,22 +76,18 @@ const Contact = () => {
   }
 
   return (
-    <div className={contact.background}>
+    <div className={contact.formBackground}>
       <div className={contact.wrapper}>
         <div className={contact.button}>
-          <img className={contact.email} src={require("./email.svg")}></img>
         </div>
-        <h2 className={contact.title}>GET IN TOUCH!</h2>
-        <h4 className={contact.paragraph}>
-          Whether you have an idea for a project or just want to chat, feel free
-          to shoot me an email!{" "}
-        </h4>{" "}
+        <h2 className={contact.title}>Get In Touch</h2>
+        <div className={contact.lineSpace}></div>
         <div className={contact.formBox}>
           <form onSubmit={handleOnSubmit}>
             <div className={contact.box1}>
               <label
                 className={contact.input}
-                for="exampleInputEmail1"
+                htmlFor="exampleInputEmail1"
                 required="required"
               >
                 Name
@@ -108,13 +127,14 @@ const Contact = () => {
                 sitekey="6LfwH8QZAAAAAEj31JDBgqFid21Os2CktNbLt2em"
                 render="explicit"
                 onloadCallback={recaptchaLoaded}
+                verifyCallback={verifyCallback}
               />
             </div>
             <button
               type="submit"
               className={`${contact.btn} ${contact.btnPrimary}`}
               disabled={serverState.submitting}
-              onClick={handleSubcribe}
+              onClick={clickHandler}
             >
               Submit
             </button>

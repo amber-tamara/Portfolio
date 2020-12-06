@@ -8,7 +8,7 @@ import header from "../Header/header.module.css"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      headerImage: file(relativePath: { eq: "images/milk-way.jpg" }) {
+      headerImage: file(relativePath: { eq: "images/code.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1800) {
             ...GatsbyImageSharpFluid
@@ -25,21 +25,19 @@ const Header = () => {
       >
         <ul className={header.navBox}>
           <li>
-            <Link to="#about">ABOUT</Link>
+            <Link to="#about">Home</Link>
           </li>
           <li>
             {" "}
-            <Link to="#projects">PORTFOLIO</Link>
+            <Link to="#projects">My Work</Link>
           </li>
           <li>
-            <Link to="#contact">CONTACT</Link>
+            <Link to="#contact">Contact</Link>
           </li>
         </ul>
-        <div className={header.mainOverlay}>
-          <div className={header.contentBox}>
-            <h1 className={header.mainTitle}>HI, I'M AMBER</h1>
-            <p className={header.subTitle}>Web Developer</p>
-          </div>
+        <div className={header.contentBox}>
+          <h1 className={header.mainTitle}>Amber Jansen</h1>
+          <p className={header.subTitle}>I bring your projects to life</p>
         </div>
       </BackgroundImage>
     </header>

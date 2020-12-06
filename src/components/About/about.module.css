@@ -1,62 +1,62 @@
-.aboutMe {
-  margin: 0 auto;
-  /* max-width: 650px; */
-  text-align: center;
-  margin-bottom: 100px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-evenly;
+@import "/fonts/fonts.css";
+
+html, body {
+  overflow-x: hidden;
 }
 
-.imgCropper {
-  width: 300px;
-  height: 300px;
-  /* overflow: hidden; */
-  box-shadow: 0 4px 10px 5px rgba(0,0,0,.12);
-  border-radius: 2%;
+/* background */
+
+.backgroud {
+  background-color: #F2F2F2
 }
+
+/* title */
+
+.background h2 {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.line {
+ border-bottom: 3px #004216 solid;
+ width: 70px;
+}
+
+/* selfie */
 
 .picture {
-  margin: 0 auto;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2%;
+  width: 250px;
+  border-radius: 50%;
 }
 
-.paragraph {
-  text-align: center;
-  margin: 0 auto;
-  /* margin-top: 1em; */
-  max-width: 480px;
-  padding: 0  20px;
-}
-.TLDR {
-  background: #f0f0f0;
-  color: #555;
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px;
-  width: 70%;
-  max-width: 650px;
-}
-
-.boxSvg {
+.contentBox {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
-.svg {
-  height: 70px;
-  margin-top: 20px;
+.aboutWrapper {
+  max-width: 600px;
+  color: black;
 }
 
-.danceSvg {
-
+.aboutWrapper p {
+  color: black;
 }
 
-.aboutHeading {
- text-align: center;
- padding: 60px;
+.sectionWrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.contentBox p {
+  font-family: 'Verdana';
+  font-weight: 500;
+}
+
+.bio {
+  margin-top: 50px;
 }

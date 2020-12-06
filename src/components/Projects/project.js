@@ -3,80 +3,84 @@ import projects from "./project.module.css"
 
 const Projects = () => {
   return (
-    <div className={projects.projectContainer}>
-      <h1 className={projects.header}>WHAT I'VE DONE</h1>
-      <p className={projects.more}>(more coming soon)</p>
+    <div className={projects.background}>
       <div className={projects.container}>
-        <div className={projects.projectCard}>
-          <div className={projects.projectImg}>
-            <img className={projects.img} src={require("./art.png")}></img>
-          </div>
-          <div className={projects.projectDetails}>
-            <h3 className={projects.projectTitle}>Annette's Art</h3>
-            <p className={projects.projectsDescription}>
-              orem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book.
-               </p>
-            <ul className={projects.tagList}>
-              <li className={projects.tag}>Gatsby</li>
-              <li className={projects.tag}>React</li>
-              <li className={projects.tag}>CSS</li>
-            </ul>
-            <div className={projects.btnGroup}>
-              <a className={`${projects.btn} ${projects.btnPrimary}`}>View Demo</a>
-              <a className={`${projects.btn} ${projects.btnSecondary}`}>View Code</a>
-            </div>
-          </div>
+        <div className={projects.mainTitleContainer}>
+          <h2>My Work</h2>
+          <div className={projects.line}></div>
         </div>
-        <div className={projects.projectCard}>
-          <div className={`${projects.projectCover} ${projects.projectCover2}`}>
-            <div className={projects.projectImg}>
-              <img className={projects.img} src={require("./weather.png")}></img>
+        <div className={projects.project}>
+          <div className={projects.screenShots}>
+            <img className={projects.imgLg} src={require("./images/ArtWebsite/desktopArtSite.png")}></img>
+            <img className={projects.imgMd} src={require("./images/ArtWebsite/tabletArtSite.png")}></img>
+            <img className={projects.imgSm} src={require("./images/ArtWebsite/mobileArtSite.png")}></img>
+          </div>
+          <div className={projects.titleContainer}>
+            <h2>ANNETTE'S ART</h2>
+            <div className={projects.descriptionButtons}>
+              <a>DEMO</a>
+              <a>CODE</a>
             </div>
           </div>
-          <div className={`${projects.projectDetails} ${projects.projectDetails2}`}>
-            <h3 className={projects.projectTitle}>Weather App</h3>
-            <p className={projects.projectsDescription}>
-              orem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book.
-               </p>
-            <ul className={projects.tagList}>
-              <li className={projects.tag}>Javascript</li>
-              <li className={projects.tag}>html</li>
-              <li className={projects.tag}>CSS</li>
-            </ul>
-            <div className={projects.btnGroup}>
-              <a className={`${projects.btn} ${projects.btnPrimary}`}>View Demo</a>
-              <a className={`${projects.btn} ${projects.btnSecondary}`}>View Code</a>
-            </div>
-          </div>
+          <p className={projects.paragraph}>Built with Gatsby which uses ReactJS components.
+          Performance isn’t optional, it's built in, with
+          improved loading time by code splitting. Intelligent
+          image loading</p>
+          <ul className={projects.usedItems}>
+            <li>GATSBY</li>
+            <li>REACT</li>
+            <li>SCSS</li>
+          </ul>
         </div>
-        <div className={projects.projectCard}>
-          <div className={projects.projectImg}>
-            <img className={projects.img} src={require("./gifspot.png")}></img>
+        <div className={projects.lineSpace}></div>
+        <div className={projects.project}>
+          <div className={projects.screenShots}>
+            <img className={projects.imgLg} src={require("./images/WeatherSite/desktopWeatherSite.png")}></img>
+            <img className={projects.imgMd} src={require("./images/WeatherSite/tabletWeatherSite.png")}></img>
+            <img className={projects.imgSm} src={require("./images/WeatherSite/mobileWeatherSite.png")}></img>
           </div>
-          <div className={projects.projectDetails}>
-            <h3 className={projects.projectTitle}>Gifspot</h3>
-            <p className={projects.projectsDescription}>
-              orem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book.
-               </p>
-            <ul className={projects.tagList}>
-              <li className={projects.tag}>Javascript</li>
-              <li className={projects.tag}>html</li>
-              <li className={projects.tag}>CSS</li>
-            </ul>
-            <div className={projects.btnGroup}>
-              <a className={`${projects.btn} ${projects.btnPrimary}`}>View Demo</a>
-              <a className={`${projects.btn} ${projects.btnSecondary}`}>View Code</a>
+          <div className={projects.titleContainer}>
+            <h2>WEATHER APP</h2>
+            <div className={projects.descriptionButtons}>
+              <a>DEMO</a>
+              <a>CODE</a>
             </div>
           </div>
+          <p className={projects.paragraph}>Built with Gatsby which uses ReactJS components.
+          Performance isn’t optional, it's built in, with
+          improved loading time by code splitting. Intelligent
+          image loading</p>
+          <ul className={projects.usedItems}>
+            <li>HTML</li>
+            <li>JAVASCRIPT</li>
+            <li>SCSS</li>
+            <li>OPENWEATHER API</li>
+          </ul>
+        </div>
+        <div className={projects.lineSpace}></div>
+        <div className={projects.thirdProject}>
+          <div className={projects.screenShots}>
+            <img className={projects.imgLg} src={require("./images/GiphyWebsite/desktopGiphySite.png")}></img>
+            <img className={projects.imgMd} src={require("./images/GiphyWebsite/tabletGiphySite.png")}></img>
+            <img className={projects.imgSm} src={require("./images/GiphyWebsite/mobileGiphySite.png")}></img>
+          </div>
+          <div className={projects.titleContainer}>
+            <h2>GIFSPOT</h2>
+            <div className={projects.descriptionButtons}>
+              <a>DEMO</a>
+              <a>CODE</a>
+            </div>
+          </div>
+          <p className={projects.paragraph}>Built with Gatsby which uses ReactJS components.
+          Performance isn’t optional, it's built in, with
+          improved loading time by code splitting. Intelligent
+          image loading</p>
+          <ul className={projects.usedItems}>
+            <li>HTML</li>
+            <li>JAVASCRIPT</li>
+            <li>SCSS</li>
+            <li>GIPHY API</li>
+          </ul>
         </div>
       </div>
     </div>

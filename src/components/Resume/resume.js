@@ -22,7 +22,7 @@ const Resume = () => {
     >
       <div className={resume.overlay}></div>
       <div className={resume.container}>
-        <h1 className={resume.title}>CHECK OUT MY RESUME!</h1>
+        <h1 className={resume.title}>Check Out My CV</h1>
         <div className={resume.wrapperButton}>
           <a
             className={resume.button}

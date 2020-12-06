@@ -38,9 +38,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <About />
       <Projects />
       <Resume />
-      <About />
       <Contact />
       <Footer />
     </>

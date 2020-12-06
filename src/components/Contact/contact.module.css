@@ -1,54 +1,17 @@
-.background {
-  background: url("./background.png");
+.formBackground {
+  background: url("./background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background: linear-gradient(270deg, #a1c4fd, #c2e9fb);
-  background-size: 400% 400%;
-
-  -webkit-animation: AnimationName 9s ease infinite;
-  -moz-animation: AnimationName 9s ease infinite;
-  -o-animation: AnimationName 9s ease infinite;
-  animation: AnimationName 9s ease infinite; */
-}
-
-.background::after {
-  content: "";
-  opacity: .7;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #333;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 .wrapper {
+  z-index: 10;
+  position: relative;
   line-height: 1.6;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-/* 
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-o-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-} */
 
 .paragraph {
   text-align: center;
@@ -56,8 +19,11 @@
 }
 
 .title {
-  color: #dcdbdf;
+  color: black;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3em;
+  margin-bottom: 30px;
 }
 
 .emailButton {
@@ -103,8 +69,6 @@
   border-radius: 2px;
 }
 
-.box1 {
-}
 
 .formBox {
   display: flex;
@@ -147,8 +111,16 @@
 }
 
 .btnPrimary {
-  background: #5e70c2;
-  color: #fff;
+  padding: 10px 15px;
+  background: 0 0;
+  border: 2px solid #004216;
+  border-radius: 3px;
+  margin: 0 5px;
+  color: #004216;
+  font-family: Gotham,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s ease;
 }
 
 .recaptcha {
@@ -156,8 +128,22 @@
 }
 
 .btnPrimary:hover {
-  color: black;
-  background-color: white;
-  outline: 1px solid #5e70c2;
-  transition: 1s;
+  background-color: #004216;
+  color: white
+}
+
+.lineSpace {
+    border-bottom: 3px #004216 solid;
+    width: 70px;
+    margin: 0 auto
+   }
+
+label {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+input {
+  border: 1px black solid;
 }

@@ -50,7 +50,6 @@ padding-top: 110px;
     display: inline-block;
     padding: 7px 7px 5px;
     margin-right: 5px;
-    margin-bottom: 10px;
     color: #777;
     background: #333;
     border-radius: 3px;
@@ -63,14 +62,19 @@ padding-top: 110px;
  .screenShots {
    position: relative;
    height: 300px;
+   width: 412px;
+   order: 1;
  }
 
- .imgLg {
-   height: 300px;
+ .screenShotsWeather {
+  position: relative;
+  height: 300px;
+  width: 412px;
+  order: 0;
  }
 
  .imgMd {
-   height: 250px;
+   height: 300px;
    position: absolute;
    bottom: 0;
    right: 82px;
@@ -124,11 +128,28 @@ padding-top: 110px;
  color: #F2F2F2;
  }
 
-.project, .thirdProject > p {
+.paragraph {
+  margin-bottom: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #cbcbcb;
 }
 
-.paragraph {
-  margin-bottom: 25px;
+.project, .thirdProject {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contentContainer {
+  width: 383px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+margin-left: 20px;
+}
+
+@media (max-width: 814px) {
+  .screenShots {
+    order: 0
+  }
 }

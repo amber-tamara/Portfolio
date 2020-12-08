@@ -1,0 +1,288 @@
+/* background */
+
+.projects--background {
+  background-color: #1B1B1B;
+}
+
+.project--wrapper {
+  display: flex;
+}
+
+.projects--box {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 1900px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 130px;
+  background-color: #151515;
+  height: 400px;  
+  align-items: center;
+}
+
+/* titles */
+
+.header--box {
+  padding-top: 110px;
+}
+
+.header__underline {
+  border-bottom: 3px #5DE189 solid;
+  width: 70px;
+}
+
+h2, h3 {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+align-self: center;
+color: #F2F2F2;
+text-align: left;
+width: 100%;
+margin-bottom: 30px;
+}
+
+.third--project {
+  margin-top: 130px;
+}
+
+.header--box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+/* Images */
+
+.giphysite--images {
+  width: 410px
+}
+
+.artsite--images {
+  width: 425px;
+}
+
+  .project--images {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .artsite--images {
+   height: 291px;
+   order: 0;
+  }
+
+  .giphysite--images {
+    height: 295px;
+    order: 0;
+  }
+
+  .artimg__md {
+    height: 215px;
+  }
+
+  .artimg__sm {
+    height: 180px;
+  }
+  
+  .weathersite--images {
+    height: 295px;
+    width: 415px;
+    order: 1;
+  }
+  
+  .img__md {
+    height: 240px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .img__sm {
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+/* Content container */
+  
+.content--container {
+  width: 383px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 20px;
+}
+  
+  .heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .heading::after {
+    border-bottom: 3px #5DE189 solid;
+    width: 70px;
+  }
+
+  .content__paragraph {
+    margin-bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cbcbcb;
+  }
+  
+  /* Content buttons */
+  
+  .content__buttons {
+    margin: 26px 0;
+  }
+
+  .content__buttons > a {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: 0 0;
+    border: 2px solid #5DE189;
+    border-radius: 3px;
+    color: #5DE189;
+    font-family: Gotham,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.content__buttons > a:nth-child(1) {
+  margin-right: 10px;
+}
+
+.content__buttons > a:hover {
+  background-color: #5DE189;
+  color: black;
+}
+
+/* Tools */  
+
+ .content__tools {
+   margin: 0;
+ }
+
+ .content__tools > li {   
+    display: inline-block;
+    padding: 7px 7px 5px;
+    margin-right: 5px;
+    color: #777;
+    background: #333;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .5px;
+ }
+
+@media (min-width: 851px) {
+  .artsite--images {
+    align-self: flex-end;
+  }
+  .img__md {
+    position: absolute;
+    bottom: 0;
+  }
+  .img__sm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .artimg__md {
+    position: absolute;
+    bottom: 0;
+  }
+  .artimg__sm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .img__md {
+    position: relative;
+    margin-right: 10px;
+  }
+  .img__sm {
+    position: relative;
+  }
+  .artsite--images {
+    height: 225px;
+  }
+  .projects--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .weathersite--images {
+    order: 0
+  }
+  .first--project {
+    justify-content: center;
+    width: 524px;
+    height: 713px;
+  }
+  .third--project {
+    justify-content: center;
+    width: 524px;
+    height: 713px;
+  }
+  .project--images {
+    margin: 20px 0 0 0;
+  }
+  .content--container {
+    margin: 0 0 50px 0;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  .project--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects--box {
+    height: 2800px;
+  }
+  .second--project {
+    justify-content: center;
+    height: 709px;
+    width: 524px;
+  }
+  .artimg__md {
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 430px) {
+  .projects {
+    width: 90%;
+    background-color: #1B1B1B;
+  }
+  .project--images {
+    width: 100%;
+    height: 148px;
+  }
+  .content--container {
+    width: 100%;
+  }
+  .artimg__md {
+    height: 140px;
+    margin-right: 10px;
+  }
+  .artimg__sm {
+    height: 89px;
+  }
+  .img__sm {
+    height: 110px;
+  }
+  .img__md {
+    height: 160px;
+  }
+}

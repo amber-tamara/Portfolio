@@ -93,6 +93,28 @@
   }
 }
 
+@media (max-width: 280px){
+  .formBox {
+  justify-content: unset;
+  padding: 0;
+  }
+  .wrapper {
+  padding:  100px 16px;
+  }
+  .input {
+    width: 248px;
+  }
+  .btnPrimary {
+    width: 248px !important;
+  }
+  .recaptcha {
+    transform:scale(0.82);
+-webkit-transform:scal(0.82);
+transform-origin:0 0;
+-webkit-transform-origin:0 0;
+  }
+}
+
 .btn {
   border: 0;
   outline: 0;
@@ -115,7 +137,6 @@
   background: 0 0;
   border: 2px solid #004216;
   border-radius: 3px;
-  margin: 0 5px;
   color: #004216;
   font-family: Gotham,Helvetica,Arial,sans-serif;
   font-weight: 500;

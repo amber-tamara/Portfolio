@@ -28,6 +28,7 @@ const Resume = () => {
             className={resume.button}
             href="mailto:ambertjansen@gmail.com"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GRAB A COPY
           </a>

@@ -14,7 +14,6 @@ import "./layout.css"
 import Projects from "../Projects/project"
 import Contact from "../Contact/contact"
 import About from "../About/about"
-import Image from "../../images/image"
 import Resume from "../Resume/resume"
 
 const Layout = ({ children }) => {

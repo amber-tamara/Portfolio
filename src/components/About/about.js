@@ -1,10 +1,6 @@
 import React from "react"
 import about from "./about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
-import IconOne from "../../assets/web-development.svg"
-import IconTwo from "../../assets/UI-design.svg"
-// import IconThree from "../../assets/dancer.svg"
-import IconThree from "../../assets/yoga.svg"
 
 const About = () => {
   const data = useStaticQuery(graphql`

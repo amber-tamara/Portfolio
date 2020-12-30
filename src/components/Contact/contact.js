@@ -76,7 +76,7 @@ const Contact = () => {
   }
 
   return (
-    <div className={contact.formBackground}>
+    <div id="contact" className={contact.formBackground}>
       <div className={contact.wrapper}>
         <div className={contact.button}>
         </div>

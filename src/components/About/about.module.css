@@ -7,7 +7,7 @@ html, body {
 /* background */
 
 .backgroud {
-  background-color: #F2F2F2
+  background-color: #F2F2F2;
 }
 
 /* title */
@@ -15,7 +15,7 @@ html, body {
 .background h2 {
   color: black;
   font-size: 3em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Nunito", serif;
   margin: 0;
 }
 
@@ -51,13 +51,15 @@ html, body {
 }
 
 .sectionWrapper {
-  max-width: 960px;
+  padding: 100px;
+  /* max-width: 960px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 100px 20px; */
 }
 
 .contentBox p {
-  font-family: 'Verdana';
+  font-family: 'Raleway';
+  font-size: 1.2em;
   font-weight: 500;
 }
 

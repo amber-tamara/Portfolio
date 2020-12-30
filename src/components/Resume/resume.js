@@ -26,11 +26,8 @@ const Resume = () => {
         <div className={resume.wrapperButton}>
           <a
             className={resume.button}
-            href="mailto:ambertjansen@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GRAB A COPY
+            href="./test.rtf"
+            download="Amber_Jansen's CV">DOWNLOAD
           </a>
         </div>
       </div>

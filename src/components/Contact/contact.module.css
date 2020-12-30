@@ -21,7 +21,7 @@
 .title {
   color: black;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Nunito", serif;
   font-size: 3em;
   margin-bottom: 30px;
 }
@@ -65,7 +65,7 @@
 .input {
   margin-bottom: 20px;
   width: 100%;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 2px;
 }
 
@@ -115,31 +115,20 @@ transform-origin:0 0;
   }
 }
 
-.btn {
-  border: 0;
-  outline: 0;
+.btnPrimary {
   display: block;
-  font-family: "Space Mono",monospace;
-  color: #dcdbdf;
-  background: transparent;
-  font-weight: 700;
+  font-family: "Raleway",monospace;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  padding: 0.5rem 0.5rem;
-  transition: all .5s ease-in-out;
   font-size: 0.9rem;
   outline: 1px solid #5e70c2;
-  transition: 1s;
   width: 100%;
-}
-
-.btnPrimary {
   padding: 10px 15px;
   background: 0 0;
   border: 2px solid #004216;
   border-radius: 3px;
   color: #004216;
-  font-family: Gotham,Helvetica,Arial,sans-serif;
-  font-weight: 500;
+  font-weight: 900;
   text-transform: uppercase;
   transition: all .3s ease;
 }
@@ -161,7 +150,7 @@ transform-origin:0 0;
 
 label {
   color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
 }
 

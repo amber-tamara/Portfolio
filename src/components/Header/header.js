@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
@@ -25,19 +24,22 @@ const Header = () => {
       >
         <ul className={header.navBox}>
           <li>
-            <Link to="#about">Home</Link>
+            <a href="#about">HOME</a>
           </li>
           <li>
-            {" "}
-            <Link to="#projects">My Work</Link>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <a href="#work">WORK</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT ME</a>
           </li>
         </ul>
         <div className={header.contentBox}>
           <h1 className={header.mainTitle}>Amber Jansen</h1>
           <p className={header.subTitle}>I bring your projects to life</p>
+          <a>MY WORK</a>
         </div>
       </BackgroundImage>
     </header>

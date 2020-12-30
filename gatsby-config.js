@@ -8,6 +8,16 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-recaptcha`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Nunito`, `Raleway`,
+          `Nunito\:300,400,400i,900` // you can also specify font weights and styles
+        ],
+        display: 'block'
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,

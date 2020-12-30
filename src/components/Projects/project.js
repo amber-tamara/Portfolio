@@ -4,7 +4,7 @@ import lighthouse from "./lighthouse.mp4"
 
 const Projects = () => {
   return (
-    <div className="projects--background">
+    <div id="work" className="projects--background">
       <div className="projects--box">
         <h2 className="heading">My Work</h2>
         <div className="projects first--project">
@@ -30,7 +30,7 @@ const Projects = () => {
             <div className="image_button_wrapper">
               <img className="img__md" src={require("./images/ArtWebsite/tabbby.png")} alt="art website preview"></img>
               <div className="content__buttons">
-                <a>PREVIEW</a>
+                <a href="https://competent-lamarr-421e1b.netlify.app/" target="_blank">PREVIEW</a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Projects = () => {
             <div className="image_button_wrapper">
               <img className="img__md" src={require("./images/WeatherSite/tabi.png")} alt="weather website preview"></img>
               <div className="content__buttons">
-                <a>PREVIEW</a>
+                <a href="https://priceless-clarke-1f2a18.netlify.app/" target="_blank">PREVIEW</a>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Projects = () => {
             <div className="image_button_wrapper">
               <img className="img__md" src={require("./images/blue.png")} alt="giph website preview"></img>
               <div className="content__buttons">
-                <a>PREVIEW</a>
+                <a href="https://amber-tamara.github.io/GIF.SPOT/" target="_blank">PREVIEW</a>
               </div>
             </div>
           </div>

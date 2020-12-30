@@ -3,6 +3,7 @@ import "./project.css"
 import lighthouse from "./lighthouse.mp4"
 
 const Projects = () => {
+
   return (
     <div id="work" className="projects--background">
       <div className="projects--box">
@@ -46,8 +47,7 @@ const Projects = () => {
               this by pre loading fonts, executing Javascript when the page has finished parsing and reducing the file
               size of CSS and JavaScript using  Minification and loading the background image using picture tags to
                correctly size the images.</p>
-              <video width="320px" height="240" autoPlay="autoplay" muted="" loop="loop" preload="auto" playsInline className="lighthouse_video">
-                <source type="video/mp4" src={lighthouse}></source>
+              <video src={lighthouse} width="320px" height="240" autoPlay muted loop className="lighthouse_video">
               </video>
               <ul className="content__tools">
                 <li>HTML</li>

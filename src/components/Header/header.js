@@ -30,16 +30,17 @@ const Header = () => {
             <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#work">WORK</a>
+            <a href="#work">MY WORK</a>
           </li>
           <li>
             <a href="#contact">CONTACT ME</a>
           </li>
         </ul>
-        <div className={header.contentBox}>
-          <h1 className={header.mainTitle}>Amber Jansen</h1>
-          <p className={header.subTitle}>I bring your projects to life</p>
-          <a>MY WORK</a>
+        <div className={`${header.box} ${header.reveal}`}>
+          <h1 className={header.heading}><span>Amber Jansen</span></h1>
+          <div class={header.line}></div>
+          <h2 className={header.subTitle}><span>Web Developer & UX Enthusiast</span></h2>
+          {/* <a href="#work">MY WORK</a> */}
         </div>
       </BackgroundImage>
     </header>

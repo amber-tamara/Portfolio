@@ -113,7 +113,7 @@
 }
 .reveal .line {
   animation: lineIn 1s linear forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 @keyframes lineIn {
@@ -133,7 +133,7 @@
 
 .reveal .subTitle span {
   animation: subHeadInTop 0.2s linear forwards;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   opacity: 0;
 }
 
@@ -151,7 +151,7 @@
 .reveal .heading span {
   animation: headingInBottom 0.2s linear forwards;
   opacity: 0;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 

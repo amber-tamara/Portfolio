@@ -112,17 +112,17 @@
   background-color: rgb(169, 255, 161);
 }
 .reveal .line {
-  animation: lineIn 1.5s linear forwards;
+  animation: lineIn 1s linear forwards;
 }
 
 @keyframes lineIn {
   0% {
     width: 0%;
   }
-  50% {
+  40% {
     width: 100%;
   }
-  60% {
+  70% {
     width: 100%;
   }
   100% {
@@ -132,7 +132,7 @@
 
 .reveal .subTitle span {
   animation: subHeadInTop 0.2s linear forwards;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 
@@ -150,7 +150,7 @@
 .reveal .heading span {
   animation: headingInBottom 0.2s linear forwards;
   opacity: 0;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
 }
 
 

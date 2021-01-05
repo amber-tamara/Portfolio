@@ -83,7 +83,7 @@ const Contact = () => {
         <h2 className={contact.title}>Get In Touch</h2>
         <div className={contact.lineSpace}></div>
         <div className={contact.formBox}>
-          <form onSubmit={handleOnSubmit} method="POST" data-netlify-recaptcha="true" data-netlify="true">
+          <form className={contact.formLabels} onSubmit={handleOnSubmit} method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <div className={contact.box1}>
               <label
                 className={contact.input}

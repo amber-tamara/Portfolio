@@ -157,3 +157,9 @@ label {
 input {
   border: 1px black solid;
 }
+
+@media (max-width: 319px) {
+  .formLabels {
+  width: 280px;
+  }
+}

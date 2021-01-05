@@ -1,8 +1,21 @@
-import React from "react"
-import "./project.css"
-import lighthouse from "./lighthouse.mp4"
+import React from "react";
+import "./project.css";
+import lighthouse from "./lighthouse.mp4";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"
 
 const Projects = () => {
+  const data = useStaticQuery(graphql`{
+    file(relativePath: {eq: "tabi.png"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`)
 
   return (
     <div id="work" className="projects--background">
@@ -31,7 +44,7 @@ const Projects = () => {
             <div className="image_button_wrapper">
               <img className="img__md" src={require("./images/ArtWebsite/tabbby.png")} alt="art website preview"></img>
               <div className="content__buttons">
-                <a href="https://competent-lamarr-421e1b.netlify.app/" target="_blank">PREVIEW</a>
+                <a href="https://competent-lamarr-421e1b.netlify.app/" target="_blank" rel="noopener noreferrer">PREVIEW</a>
               </div>
             </div>
           </div>
@@ -58,9 +71,9 @@ const Projects = () => {
               </ul>
             </div>
             <div className="image_button_wrapper">
-              <img className="img__md" src={require("./images/WeatherSite/tabi.png")} alt="weather website preview"></img>
+              <Img className="img__md" fluid={data.file.childImageSharp.fluid} alt="weather website preview" />
               <div className="content__buttons">
-                <a href="https://priceless-clarke-1f2a18.netlify.app/" target="_blank">PREVIEW</a>
+                <a href="https://priceless-clarke-1f2a18.netlify.app/" target="_blank" rel="noopener noreferrer">PREVIEW</a>
               </div>
             </div>
           </div>
@@ -86,7 +99,7 @@ const Projects = () => {
             <div className="image_button_wrapper">
               <img className="img__md" src={require("./images/blue.png")} alt="giph website preview"></img>
               <div className="content__buttons">
-                <a href="https://amber-tamara.github.io/GIF.SPOT/" target="_blank">PREVIEW</a>
+                <a href="https://amber-tamara.github.io/GIF.SPOT/" target="_blank" rel="noopener noreferrer">PREVIEW</a>
               </div>
             </div>
           </div>

@@ -63,11 +63,14 @@ html, body {
   font-weight: 500;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 618px) {
   .background h2::after {
     margin: 30px auto
   }
   .background h2 {
     text-align: center;
+  }
+  .sectionWrapper {
+    padding: 100px 20px;
   }
  }

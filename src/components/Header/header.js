@@ -3,11 +3,13 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import header from "../Header/header.module.css"
+import NavBar from "./NavBar"
+import SidebarElement from './Sidebar'
 
-const Header = () => {
+const Header = ({ toggle, navbar, isOpen }) => {
   const data = useStaticQuery(graphql`
     query {
-      headerImage: file(relativePath: { eq: "images/code.jpg" }) {
+      headerImage: file(relativePath: { eq: "code.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1800) {
             ...GatsbyImageSharpFluid
@@ -15,27 +17,17 @@ const Header = () => {
         }
       }
     }
-  `)
+`)
+
   return (
     <header>
       <BackgroundImage
+        id="home"
         className={header.masthead}
         fluid={data.headerImage.childImageSharp.fluid}
       >
-        <ul className={header.navBox}>
-          <li>
-            <a href="#about">HOME</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#work">MY WORK</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT ME</a>
-          </li>
-        </ul>
+        <NavBar navbar={navbar} toggle={toggle} />
+        <SidebarElement navbar={navbar} isOpen={isOpen} toggle={toggle} />
         <div className={`${header.box} ${header.reveal}`}>
           <h1 className={header.heading}><span>Amber Jansen</span></h1>
           <div class={header.line}></div>
@@ -43,7 +35,7 @@ const Header = () => {
           {/* <a href="#work">MY WORK</a> */}
         </div>
       </BackgroundImage>
-    </header>
+    </header >
   )
 }
 

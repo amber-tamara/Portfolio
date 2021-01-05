@@ -1,25 +1,8 @@
 import React from "react"
-import about from "./about.module.css"
-import { useStaticQuery, graphql } from "gatsby"
+import about from "./about.module.css";
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        totalCount
-        edges {
-          node {
-            frontmatter {
-              title
-              date(formatString: "DD MMMM, YYYY")
-              firstPart
-              secondPart
-            }
-          }
-        }
-      }
-    }
-  `)
+
   return (
     <div id="about" className={about.background}>
       <div className={about.sectionWrapper}>

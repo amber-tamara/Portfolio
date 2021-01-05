@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from "../Footer/footer"
@@ -14,7 +14,7 @@ import "./layout.css"
 import Projects from "../Projects/project"
 import Contact from "../Contact/contact"
 import About from "../About/about"
-import Resume from "../Resume/resume"
+import Resume from "../Resume/resume";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,9 +27,30 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [isOpen, setIsOpen] = useState(false)
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 1) {
+      setNavbar(true)
+    }
+    else {
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground)
+  }, []);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+    console.log('poo')
+  }
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header navbar={navbar} isOpen={isOpen} toggle={toggle} siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           backgroundColor: `#75b42c`,

@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Resume = () => {
   const data = useStaticQuery(graphql`
     query {
-      resumeImage: file(relativePath: { eq: "components/Resume/laptop.jpg" }) {
+      resumeImage: file(relativePath: { eq: "laptopBlur.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid

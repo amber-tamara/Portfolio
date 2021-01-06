@@ -1,8 +1,8 @@
-import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import styled from 'styled-components'
-import { FaTimes } from 'react-icons/fa'
+import React from 'react';
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import styled from 'styled-components';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
   height: ${({ isOpen }) => (isOpen ? '100%' : '0')};
@@ -41,21 +41,17 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-  
   color: #f2f2f2;
 `
 
 export const SidebarMenu = styled.ul`
   display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-//   grid-template-columns: 1fr;
-//   grid-template-rows: repeat(6, 80px)
-//   text-align: center;
   justify-content: center;
   flex-direction: column;
   padding: 0;
 
   @media screen and (max-width:  480px) {
-      grid-template-rows: repeat(6, 60px)
+      grid-template-rows: repeat(6, 60px);
   }
 `
 
@@ -74,7 +70,7 @@ export const SidebarLink = styled.a`
 
   &:hover {
     color: #5DE189;
-    transition: 0.2s ease-in-out
+    transition: 0.2s ease-in-out;
 }
 `
 

@@ -1,12 +1,11 @@
 import { FaBars } from 'react-icons/fa';
-import styled from 'styled-components'
-import React from 'react'
+import styled from 'styled-components';
+import React from 'react';
 
 export const Nav = styled.nav`
     background-color: ${({ navbar }) => (navbar ? 'rgb(7, 7, 7);' : 'transparent')};
     height: ${({ navbar }) => (navbar ? '50px;' : '80px')};
     transition: ${({ navbar }) => (navbar ? '.5s ease-in-out, padding .5s ease-in-out' : '')};
-    //  margin-top: -80px
     width: 100%;
     display: flex;
     justify-content: center;
@@ -34,7 +33,7 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px
+    max-width: 1100px;
 `
 
 export const NavLogo = styled.h2`
@@ -80,7 +79,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    height: 80px
+    height: 80px;
 `
 
 export const NavLinks = styled.a`

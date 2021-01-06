@@ -38,21 +38,17 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-  
   color: #f2f2f2;
 `
 
 export const SidebarMenu = styled.ul`
   display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-//   grid-template-columns: 1fr;
-//   grid-template-rows: repeat(6, 80px)
-//   text-align: center;
   justify-content: center;
   flex-direction: column;
   padding: 0;
 
   @media screen and (max-width:  480px) {
-      grid-template-rows: repeat(6, 60px)
+      grid-template-rows: repeat(6, 60px);
   }
 `
 

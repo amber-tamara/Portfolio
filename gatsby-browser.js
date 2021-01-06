@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import React from 'react';
+import { Navv } from './src/components/Header/NavBar/NavbarElements'
+import { Nav } from './src/components/Header/NavBar/index'
+import { Sidenav } from './src/components/Header/Sidebar/SidebarElement'
+import { Sidenavv } from './src/components/Header/Sidebar/index'
 
-// You can delete this file if you're not using it
+export const wrapPageElement = ({ Navv, Nav, Sidenav, Sidenavv }) => (
+    <>
+        <Nav />
+        <Navv />
+        <Sidenavv />
+        <Sidenav />
+    </>
+);

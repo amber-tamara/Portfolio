@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [isOpen, setIsOpen] = useState(false)
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -43,14 +42,9 @@ const Layout = ({ children }) => {
     window.addEventListener('scroll', changeBackground)
   }, []);
 
-  const toggle = () => {
-    setIsOpen(!isOpen)
-    console.log('poo')
-  }
-
   return (
     <>
-      <Header navbar={navbar} isOpen={isOpen} toggle={toggle} siteTitle={data.site.siteMetadata.title} />
+      <Header navbar={navbar} siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           backgroundColor: `#75b42c`,

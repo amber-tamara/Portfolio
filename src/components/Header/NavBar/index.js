@@ -2,13 +2,13 @@ import { FaBars } from 'react-icons/fa';
 import React from 'react'
 import "./NavbarElements.css"
 
-const Index = ({ toggle, navbar }) => {
+const Index = ({ navbar }) => {
 
     return (
         <div className={`nav ${navbar ? 'navVisible' : ''}`}>
             <div className={'navbarContainer'}>
                 <h3 className={`${navbar ? 'navLogo' : 'navLogoInvisible'}`} navbar={navbar}>Amber Jansen</h3>
-                <div className={'mobileIcon'} onClick={toggle} onKeyDown={toggle} aria-hidden="true">
+                <div className={'mobileIcon'} onClick={navbar} onKeyDown={navbar} aria-hidden="true">
                     <FaBars />
                 </div>
                 <ul className={'navMenu'}>

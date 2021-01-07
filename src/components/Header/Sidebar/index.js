@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import { FaTimes } from 'react-icons/fa';
 import "./SidebarElement.css";
 
-const SidebarElement = ({ navbar }) => {
+const SidebarElement = ({ toggle, isOpen, navbar }) => {
     const data = useStaticQuery(graphql`
     {
                 file(relativePath: {eq: "Github.png"}) {
@@ -18,23 +18,23 @@ const SidebarElement = ({ navbar }) => {
       `)
 
     return (
-        <div className={`sidebarContainer ${navbar ? 'sidebarContainerVisible' : 'sidebarContainerInvisible'}`} onKeyDown={navbar} aria-hidden="true">
-            <div className={'icon'} onClick={navbar} onKeyDown={navbar} aria-hidden="true">
+        <div className={`sidebarContainer ${isOpen ? 'sidebarContainerVisible' : 'sidebarContainerInvisible'}`} aria-hidden="true">
+            <div className={'icon'} onClick={toggle} onKeyDown={toggle}>
                 <FaTimes className={'closeIcon'} />
             </div>
             <div className={'SidebarWrapper'}>
-                <ul className={`${navbar ? 'sidebarContainerVisible' : '.sidebarContainerInvisible'}`} onKeyDown={navbar} aria-hidden="true">
+                <ul className={`${isOpen ? 'sidebarContainerVisible' : '.sidebarContainerInvisible'}`} aria-hidden="true">
                     <li className={'sidebarLink'}>
-                        <a href='#home' onClick={navbar} onKeyDown={navbar}> Home </a>
+                        <a href='#home' onClick={isOpen}> Home </a>
                     </li>
                     <li className={'sidebarLink'}>
-                        <a href='#about' onClick={navbar} onKeyDown={navbar}> About </a>
+                        <a href='#about' onClick={isOpen}> About </a>
                     </li>
                     <li className={'sidebarLink'}>
-                        <a href='#work' onClick={navbar} onKeyDown={navbar}> My Work </a>
+                        <a href='#work' onClick={isOpen}> My Work </a>
                     </li>
                     <li className={'sidebarLink'}>
-                        <a href='#contact' onClick={navbar} onKeyDown={navbar}> Contact Me </a>
+                        <a href='#contact' onClick={isOpen}> Contact Me </a>
                     </li>
                     <a
                         className={'svgStyle'}

@@ -9,16 +9,16 @@ const Index = ({ navbar, toggle, isOpen }) => {
                 <h3 className={`${navbar ? 'navLogo' : 'navLogoInvisible'}`} navbar={navbar}>Amber Jansen</h3>
                 <ul className={'navMenu'}>
                     <li className={'navItem'}>
-                        <span className={'navLinks'} to="home">Home</span>
+                        <a className={'navLinks'} href="#home">Home</a>
                     </li>
                     <li className={'navItem'}>
-                        <span className={'navLinks'} to="about">About</span>
+                        <a className={'navLinks'} href="#about">About</a>
                     </li>
                     <li className={'navItem'}>
-                        <span className={'navLinks'} to="projects">My Work</span>
+                        <a className={'navLinks'} href="#work">My Work</a>
                     </li>
                     <li className={'navItem'}>
-                        <span className={'navLinks'} to="contact">Contact</span>
+                        <a className={'navLinks'} href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>

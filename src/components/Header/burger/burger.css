@@ -44,7 +44,6 @@
   .navBarTwo {
      background-color: #f2f2f2;
       transform: translateX(0);
-      opacity: 100%;
   }
   
   .navBarTwoInvisible {

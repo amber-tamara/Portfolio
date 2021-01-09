@@ -44,7 +44,6 @@
 .navLogo {
     transition: opacity 0.5s linear;
     transition: all .3s ease;
-    opacity: 100%;
     visibility: visible;
     color: #5DE189;
     cursor: pointer;

@@ -4,7 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import header from "../Header/header.module.css"
 import NavBar from "./NavBar"
-import SidebarElement from './Sidebar'
+import SidebarElement from './Sidebar/index'
+import Burger from './burger/burger'
 
 const Header = ({ toggle, navbar, isOpen }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const Header = ({ toggle, navbar, isOpen }) => {
         className={header.masthead}
         fluid={data.headerImage.childImageSharp.fluid}
       >
+        <Burger isOpen={isOpen} toggle={toggle} />
         <NavBar navbar={navbar} toggle={toggle} />
         <SidebarElement navbar={navbar} isOpen={isOpen} toggle={toggle} />
         <div className={`${header.box} ${header.reveal}`}>

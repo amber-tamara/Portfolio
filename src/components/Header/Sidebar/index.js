@@ -18,23 +18,23 @@ const SidebarElement = ({ toggle, isOpen, navbar }) => {
       `)
 
     return (
-        <div className={`sidebarContainer ${isOpen ? 'sidebarContainerVisible' : 'sidebarContainerInvisible'}`} aria-hidden="true">
-            <div className={'icon'} onClick={toggle} onKeyDown={toggle}>
-                <FaTimes className={'closeIcon'} />
-            </div>
-            <div className={'SidebarWrapper'}>
+        <div className={` ${isOpen ? 'sidebarContainerVisible' : 'sidebarContainerInvisible'}`} aria-hidden="true">
+            {/* <div className={'icon'} onClick={toggle} onKeyDown={toggle}> */}
+            {/* <FaTimes className={'closeIcon'} /> */}
+            {/* </div> */}
+            <div className={'sidebarWrapper'}>
                 <ul className={`${isOpen ? 'sidebarContainerVisible' : '.sidebarContainerInvisible'}`} aria-hidden="true">
                     <li className={'sidebarLink'}>
-                        <a href='#home' onClick={isOpen}> Home </a>
+                        <a href='#home' onClick={toggle}> Home </a>
                     </li>
                     <li className={'sidebarLink'}>
-                        <a href='#about' onClick={isOpen}> About </a>
+                        <a href='#about' onClick={toggle}> About </a>
                     </li>
                     <li className={'sidebarLink'}>
-                        <a href='#work' onClick={isOpen}> My Work </a>
+                        <a href='#work' onClick={toggle}> My Work </a>
                     </li>
                     <li className={'sidebarLink'}>
-                        <a href='#contact' onClick={isOpen}> Contact Me </a>
+                        <a href='#contact' onClick={toggle}> Contact Me </a>
                     </li>
                     <a
                         className={'svgStyle'}

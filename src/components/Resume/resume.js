@@ -21,7 +21,11 @@ const Resume = () => {
       fluid={data.resumeImage.childImageSharp.fluid}
     >
       <div className={resume.overlay}></div>
-      <div className={resume.container}>
+      <div
+        data-sal="fade"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        className={resume.container}>
         <h1 className={resume.title}>Check Out My CV</h1>
         <div className={resume.wrapperButton}>
           <a

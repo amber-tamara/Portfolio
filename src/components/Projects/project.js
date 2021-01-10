@@ -18,10 +18,20 @@ const Projects = () => {
 `)
 
   return (
-    <div id="work" className="projects--background">
+    <div
+      id="work"
+      className="projects--background">
       <div className="projects--box">
-        <h2 className="heading">My Work</h2>
-        <div className="projects first--project">
+        <h2
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className="heading">My Work</h2>
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className="projects first--project">
           <div className="project--wrapper">
             <div className="content--container">
               <h2>ANNETTE'S ART</h2>
@@ -42,7 +52,7 @@ const Projects = () => {
               </ul>
             </div>
             <div className="image_button_wrapper">
-              <img className="img__md" src={require("./images/ArtWebsite/tabbby.png")} alt="art website preview"></img>
+              <img className="img__md" src={require("./images/tabbby.png")} alt="art website preview"></img>
               <div className="content__buttons">
                 <a href="https://competent-lamarr-421e1b.netlify.app/" target="_blank" rel="noopener noreferrer">PREVIEW</a>
               </div>
@@ -50,7 +60,11 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="projects second--project">
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className="projects second--project">
           <div className="project--wrapper">
             <div className="content--container">
               <h2>WEATHER APP</h2>
@@ -78,7 +92,11 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="projects third--project">
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className="projects third--project">
           <div className="project--wrapper">
             <div className="content--container">
               <h2>GIFSPOT</h2>

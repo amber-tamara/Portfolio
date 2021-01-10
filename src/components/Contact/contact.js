@@ -77,12 +77,21 @@ const Contact = () => {
 
   return (
     <div id="contact" className={contact.formBackground}>
-      <div className={contact.wrapper}>
+      <div
+        className={contact.wrapper}>
         <div className={contact.button}>
         </div>
-        <h2 className={contact.title}>Get In Touch</h2>
+        <h2
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className={contact.title}>Get In Touch</h2>
         <div className={contact.lineSpace}></div>
-        <div className={contact.formBox}>
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          className={contact.formBox}>
           <form className={contact.formLabels} onSubmit={handleOnSubmit} method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <div className={contact.box1}>
               <label

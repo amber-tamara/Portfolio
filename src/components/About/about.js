@@ -1,11 +1,18 @@
 import React from "react"
 import about from "./about.module.css";
 
+
 const About = () => {
 
+
   return (
-    <div id="about" className={about.background}>
-      <div className={about.sectionWrapper}>
+    <div
+      data-sal="fade"
+      data-sal-delay="100"
+      data-sal-easing="ease"
+      id="about" className={about.background}>
+      <div
+        className={about.sectionWrapper}>
         <div className={about.contentBox}>
           <div className={about.aboutWrapper}>
             <h2>Hey, I'm Amber</h2>

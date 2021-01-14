@@ -18,9 +18,6 @@ const SidebarElement = ({ toggle, isOpen, navbar }) => {
 
     return (
         <div className={` ${isOpen ? 'sidebarContainerVisible' : 'sidebarContainerInvisible'}`} aria-hidden="true">
-            {/* <div className={'icon'} onClick={toggle} onKeyDown={toggle}> */}
-            {/* <FaTimes className={'closeIcon'} /> */}
-            {/* </div> */}
             <div className={'sidebarWrapper'}>
                 <ul className={`${isOpen ? 'sidebarContainerVisible' : '.sidebarContainerInvisible'}`} aria-hidden="true">
                     <li className={'sidebarLink'}>

@@ -1,10 +1,17 @@
 .footer {
-  height: 100px;
+  height: 150px;
   background-color: rgb(7, 7, 7);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wrapper {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .image {
@@ -15,4 +22,14 @@
 
 .image:hover {
   filter: invert(50%);
+}
+
+.sentence {
+  color: #f3f3f3;
+  font-family: "Nunito", serif;
+  margin: 0;
+}
+
+.github {
+  align-self: center;
 }

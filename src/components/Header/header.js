@@ -32,9 +32,8 @@ const Header = ({ toggle, navbar, isOpen }) => {
         <SidebarElement navbar={navbar} isOpen={isOpen} toggle={toggle} />
         <div className={`${header.box} ${header.reveal}`}>
           <h1 className={header.heading}><span>Amber Jansen</span></h1>
-          <div class={header.line}></div>
+          <div className={header.line}></div>
           <h2 className={header.subTitle}><span>Web Developer & UX Enthusiast</span></h2>
-          {/* <a href="#work">MY WORK</a> */}
         </div>
       </BackgroundImage>
     </header >

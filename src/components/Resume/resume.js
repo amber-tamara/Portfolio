@@ -2,6 +2,7 @@ import React from "react"
 import resume from "./resume.module.css"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
+import pdf from "./docs/My_CV.pdf"
 
 const Resume = () => {
   const data = useStaticQuery(graphql`
@@ -21,16 +22,14 @@ const Resume = () => {
       fluid={data.resumeImage.childImageSharp.fluid}
     >
       <div className={resume.overlay}></div>
-      <div
-        data-sal="fade"
-        data-sal-delay="100"
-        data-sal-easing="ease"
-        className={resume.container}>
+      <div className={resume.container}>
         <h1 className={resume.title}>Check Out My CV</h1>
         <div className={resume.wrapperButton}>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={pdf}
             className={resume.button}
-            href="./test.rtf"
             download="Amber_Jansen's CV">DOWNLOAD
           </a>
         </div>

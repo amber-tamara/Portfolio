@@ -2,7 +2,7 @@ import React from "react"
 import resume from "./resume.module.css"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
-import pdf from "./docs/Amber_Jansens_CV.pdf"
+import pdf from "./docs/Amber_Tamara_Jansen_CV.pdf"
 
 const Resume = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,7 @@ const Resume = () => {
             rel="noopener noreferrer"
             href={pdf}
             className={resume.button}
-            download="Amber_Jansen's CV">DOWNLOAD
+            download="Amber_Tamara_Jansen_CV">DOWNLOAD
           </a>
         </div>
       </div>

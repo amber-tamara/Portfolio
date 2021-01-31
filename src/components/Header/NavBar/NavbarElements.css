@@ -1,5 +1,5 @@
 .nav {
-    will-change: scroll-position;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,14 +9,11 @@
     z-index: 1;
     background: transparent;
     position: fixed;
-    height: 80px;
     transition: .5s ease-in-out, padding .5s ease-in-out;
     font-family: "Raleway",monospace;
 }
 
 .navVisible {
-    will-change: scroll-position;
-    will-change: transform;
     position: fixed;
     background: black;
     height: 50px;
@@ -37,7 +34,7 @@
 .navbarContainer {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 50px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
@@ -45,8 +42,6 @@
 }
 
 .navLogo {
-    will-change: scroll-position;
-    will-change: transform;
     transition: opacity 0.5s linear;
     transition: all .3s ease;
     visibility: visible;
@@ -62,8 +57,6 @@
 }
 
 .navLogoInvisible {
-    will-change: scroll-position;
-    will-change: transform;
     transition: all .3s ease;
     font-size: 0;
     opacity: 0%;

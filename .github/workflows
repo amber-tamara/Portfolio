@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master  # Adjust branch name as needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Action to checkout your repository code
+
+      - name: Install dependencies
+        run: yarn install  # Adjust for your package manager (npm, yarn, etc.)
+
+      - name: Build
+        run: yarn build  # Replace with your build command

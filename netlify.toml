@@ -1,0 +1,3 @@
+[build]
+  base = "ubuntu-latest"
+  # Add other build settings as needed

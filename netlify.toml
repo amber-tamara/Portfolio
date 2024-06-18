@@ -1,3 +1,6 @@
 [build]
-  base = "ubuntu-latest"
-  # Add other build settings as needed
+  command = "yarn build"
+  publish = "public"
+
+[context.production.environment]
+  NODE_VERSION = "16"
